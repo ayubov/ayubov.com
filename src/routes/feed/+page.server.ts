@@ -24,10 +24,10 @@ export const load = (async () => {
 		.with_field('context')
 		.max_results(1000)
 		.execute();
-
+	console.log('res.resources: ', res.resources);
 	const posts = res.resources
-		.map(({ url, context }) => ({
-			image: url,
+		.map(({ secure_url, context }) => ({
+			image: secure_url,
 			content: (context as CloudaryResourceContext).description,
 			date: (context as CloudaryResourceContext).date ?? ''
 		}))
