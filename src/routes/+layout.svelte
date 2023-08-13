@@ -53,21 +53,26 @@
 	<title>Alvi Ayubov</title>
 	<meta name="description" content="Software engineer, cat lover" />
 	<meta name="image" content={env.PUBLIC_META_IMAGE_URL} />
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="./node_modules/dialog-polyfill/dialog-polyfill.css"
+	/>
 </svelte:head>
 
-<div use:init3dBackground />
+<div class="background" use:init3dBackground>
+	<div
+		class={`relative mx-4 mb-40 flex max-w-4xl flex-col flex-wrap pt-8 antialiased md:flex-row md:pt-20 lg:mx-auto lg:pt-32 ${$theme}`}
+		style={'z-index: 100 !important; backdrop-filter: blur(0px); height: calc(100vh - 40px);'}
+	>
+		<Sidebar />
 
-<div
-	class={`relative mx-4 mb-40 flex max-w-4xl flex-col flex-wrap pt-8 antialiased md:flex-row md:pt-20 lg:mx-auto lg:pt-32 ${$theme}`}
-	style={'z-index: 100 !important; backdrop-filter: blur(0px); height: calc(100vh - 40px);'}
->
-	<Sidebar />
+		<main>
+			<slot />
+		</main>
 
-	<main>
-		<slot />
-	</main>
-
-	<Footer />
+		<Footer />
+	</div>
 </div>
 
 <style>
@@ -75,6 +80,10 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+	}
+
+	.background {
+		height: 100vh;
 	}
 
 	main {

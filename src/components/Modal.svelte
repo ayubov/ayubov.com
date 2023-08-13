@@ -1,9 +1,16 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	export let showModal: boolean;
 
 	let dialog: HTMLDialogElement;
 
 	$: if (dialog && showModal) dialog.showModal();
+
+	onMount(async () => {
+		const { default: dialogPolyfill } = await import('dialog-polyfill');
+		dialogPolyfill.registerDialog(dialog);
+	});
 </script>
 
 <dialog

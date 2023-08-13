@@ -36,9 +36,7 @@
 	const socialContainerStyle = 'position: absolute; inset: 0; width: 100%; height: 100%;';
 	const socialSvgStyle =
 		'border-radius: 50%; position: absolute; inset: 0; width: 100%; height: 100%; fill-rule: evenodd;';
-	const socialSvgMaskStyle =
-		"@media (prefers-reduced-motion: no-preference) { --ms-transition: 'fill 170ms ease-in-out'; -o-transition: 'fill 170ms ease-in-out'; --moz-transition: 'fill 170ms ease-in-out'; --webkit-transition: 'fill 170ms ease-in-out'; transition: 'fill 170ms ease-in-out';}";
-	const socialSvgBackgroundStyle = `${socialSvgMaskStyle} fill: transparent;`;
+	const socialSvgBackgroundStyle = `fill: transparent;`;
 </script>
 
 <a
@@ -58,7 +56,7 @@
 			<g fill={fgColor}>
 				<path d={icon} />
 			</g>
-			<g fill={bgColor} style={socialSvgMaskStyle}>
+			<g fill={bgColor}>
 				<path d={mask} />
 			</g>
 		</svg>
