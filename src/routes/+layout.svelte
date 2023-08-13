@@ -53,11 +53,6 @@
 	<title>Alvi Ayubov</title>
 	<meta name="description" content="Software engineer, cat lover" />
 	<meta name="image" content={env.PUBLIC_META_IMAGE_URL} />
-	<link
-		rel="stylesheet"
-		type="text/css"
-		href="./node_modules/dialog-polyfill/dialog-polyfill.css"
-	/>
 </svelte:head>
 
 <div class="background" use:init3dBackground>
