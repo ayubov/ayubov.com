@@ -28,6 +28,7 @@
 		align-items: center;
 		padding: 12px;
 		width: 100%;
+		margin: 80px 0 40px 0;
 	}
 
 	@media (min-width: 480px) {

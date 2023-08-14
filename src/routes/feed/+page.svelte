@@ -17,7 +17,7 @@
 
 <svelte:window bind:innerWidth={screenSize} />
 
-<section class="mt-4 max-h-[calc(100vh-232px)] flex-col gap-4 overflow-scroll md:mt-0">
+<main class="mt-4 flex-col gap-4 md:mt-0">
 	{#each data.posts as post, index}
 		<Post
 			{post}
@@ -29,7 +29,7 @@
 			}}
 		/>
 	{/each}
-</section>
+</main>
 
 {#if browser}
 	<Modal bind:showModal>

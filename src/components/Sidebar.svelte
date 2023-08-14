@@ -47,7 +47,7 @@
 					{/each}
 				</ul>
 				<div class="flex grow justify-end self-center md:mt-8 md:self-start">
-					<button class="bg-inverse w-12 self-center rounded-xl" on:click={theme.toggle}>
+					<button class="bg-inverse w-12 self-center rounded-xl p-0.5" on:click={theme.toggle}>
 						{$theme === 'dark' ? '🔆' : '🌙'}
 					</button>
 				</div>

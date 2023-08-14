@@ -4,7 +4,7 @@
 	import { theme } from '../stores/theme';
 </script>
 
-<section>
+<main class="flex flex-col items-center justify-center">
 	<picture class="my-8">
 		<source srcset={env.PUBLIC_ME_WEBP_URL} type="image/webp" />
 		<img
@@ -22,14 +22,4 @@
 			? '🤍'
 			: '🖤'}
 	</h2>
-</section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-</style>
+</main>

@@ -46,7 +46,7 @@
 	class="social-icon"
 	style={socialIconStyle}
 	{href}
-	target="_blank"
+	target={href.startsWith('/') ? undefined : '_blank'}
 >
 	<div style={socialContainerStyle}>
 		<svg viewBox="0 0 64 64" style={socialSvgStyle}>

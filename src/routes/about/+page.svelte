@@ -2,7 +2,7 @@
 	import { env } from '$env/dynamic/public';
 </script>
 
-<section class="max-h-[calc(100vh-232px)] overflow-scroll">
+<main class="px-2">
 	<h1 class="text-primary mb-4">About me</h1>
 	<p class="text-primary">
 		I’m a passionate software engineer with extensive experience in big tech companies and startups,
@@ -12,7 +12,7 @@
 	<br />
 	<p class="text-primary">
 		Aside from my technical expertise, I am very enthusiastic about making team work more
-		efficient.I have had the opportunity to serve as a Scrum Master and am currently in the process
+		efficient. I have had the opportunity to serve as a Scrum Master and am currently in the process
 		of obtaining my Professional Scrum Master I certificate.
 	</p>
 	<br />
@@ -41,7 +41,7 @@
 			<img
 				class="width-full height-auto rounded-lg"
 				src={env.PUBLIC_KSYUSHA_AND_LEYA__IMAGE_URL}
-				alt="Leya and Ksusha"
+				alt="Leya and Ksyusha"
 				width="256"
 			/>
 		</picture>
@@ -54,4 +54,4 @@
 			/>
 		</picture>
 	</div>
-</section>
+</main>
