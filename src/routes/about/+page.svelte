@@ -11,9 +11,9 @@
 	</p>
 	<br />
 	<p class="text-primary">
-		Aside from my technical expertise, I am very enthusiastic about making team work more
-		efficient. I have had the opportunity to serve as a Scrum Master and am currently in the process
-		of obtaining my Professional Scrum Master I certificate.
+		Aside from my technical expertise, I am very enthusiastic about making team work more efficient.
+		I have had the opportunity to serve as a Scrum Master and am currently in the process of
+		obtaining my Professional Scrum Master I certificate.
 	</p>
 	<br />
 	<p class="text-primary">

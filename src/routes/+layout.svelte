@@ -72,7 +72,7 @@
 
 <div class="h-screen" use:init3dBackground>
 	<div
-		class={`relative mx-4 flex h-full max-w-4xl flex-col flex-wrap pt-8 antialiased md:flex-row md:flex-nowrap md:pt-20 lg:mx-auto lg:pt-32 ${$theme}`}
+		class={`relative mx-4 flex h-full max-w-4xl flex-col flex-wrap pt-8 antialiased md:flex-row md:flex-nowrap md:pt-20 lg:mx-auto lg:pt-32 ${$theme} `}
 		style={'z-index: 100 !important; backdrop-filter: blur(0px);'}
 	>
 		<Sidebar />

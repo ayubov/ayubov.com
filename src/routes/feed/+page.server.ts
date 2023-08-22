@@ -27,7 +27,7 @@ export const load = (async () => {
 
 	const posts = res.resources
 		.map(({ secure_url, context }) => ({
-			image: secure_url,
+			image: secure_url.replace('/upload', '/upload/q_auto:good'),
 			content: (context as CloudaryResourceContext).description,
 			date: (context as CloudaryResourceContext).date ?? ''
 		}))

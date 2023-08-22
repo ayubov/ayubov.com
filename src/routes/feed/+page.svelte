@@ -37,7 +37,7 @@
 			{#each data.posts as post}
 				<div>
 					<picture class="my-8">
-						<img class="h-[592px] rounded-md" src={post.image} alt={post.content} />
+						<img class="h-[592px] rounded-md" loading="lazy" src={post.image} alt={post.content} />
 					</picture>
 					<div class="text-primary w3-container flex justify-between p-1">
 						<span>{post.content}</span>
