@@ -16,7 +16,7 @@
 		/>
 	</picture>
 
-	<h2 class="text-primary text-xl md:text-2xl">
+	<h2 class="text-primary text-xl">
 		Hello, I'm Alvi. I am a Software Developer, living in gorgeous Yerevan. Welcome to my website {$theme ===
 		'dark'
 			? '🤍'
